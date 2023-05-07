@@ -111,17 +111,42 @@
 
 //objects and properties
 
-let john = {
-    firstname :'john',
-    lastname: 'smith',
-    birthYear : 1990,
-    familly: ['jane','mark','bob','emily'],
-    job:'teacher',
-    isMaried : false,
-    calcAge:function(birthYear){
-        return 2018 - birthYear;
+// let john = {
+//     firstname :'john',
+//     lastname: 'smith',
+//     birthYear : 1990,
+//     familly: ['jane','mark','bob','emily'],
+//     job:'teacher',
+//     isMaried : false,
+//     calcAge:function(birthYear){
+//         return 2018 - birthYear;
+//     }
+// }
+// console.log(john.calcAge(1990))
+// console.log(john.firstname);
+// console.log(john.familly)
+
+//object method
+let john ={
+    fulName: 'John Smith',
+    mass: 90,
+    height: 1.95,
+    calcBmi:function(){
+        this.Bmi = this.mass /(this.height*this.height);
+        return this.Bmi
     }
+    
 }
-console.log(john.calcAge(1990))
-console.log(john.firstname);
-console.log(john.familly)
+let mark ={
+    fulName: 'Mark Sagbo',
+    mass: 90,
+    height: 1.75,
+    calcBmi:function(){
+        this.Bmi = this.mass /(this.height*this.height);
+        return this.Bmi
+    }
+    
+}
+console.log(john,mark);
+console.log(john.calcBmi());
+console.log(mark.calcBmi());
