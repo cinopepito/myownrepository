@@ -117,6 +117,11 @@ let john = {
     birthYear : 1990,
     familly: ['jane','mark','bob','emily'],
     job:'teacher',
-    isMaried : false
+    isMaried : false,
+    calcAge:function(birthYear){
+        return 2018 - birthYear;
+    }
 }
-console.log(john.firstname)
+console.log(john.calcAge(1990))
+console.log(john.firstname);
+console.log(john.familly)
