@@ -127,26 +127,55 @@
 // console.log(john.familly)
 
 //object method
-let john ={
-    fulName: 'John Smith',
-    mass: 90,
-    height: 1.95,
-    calcBmi:function(){
-        this.Bmi = this.mass /(this.height*this.height);
-        return this.Bmi
-    }
+// let john ={
+//     fulName: 'John Smith',
+//     mass: 90,
+//     height: 1.95,
+//     calcBmi:function(){
+//         this.Bmi = this.mass /(this.height*this.height);
+//         return this.Bmi
+//     }
     
-}
-let mark ={
-    fulName: 'Mark Sagbo',
-    mass: 90,
-    height: 1.75,
-    calcBmi:function(){
-        this.Bmi = this.mass /(this.height*this.height);
-        return this.Bmi
-    }
+// }
+// let mark ={
+//     fulName: 'Mark Sagbo',
+//     mass: 90,
+//     height: 1.75,
+//     calcBmi:function(){
+//         this.Bmi = this.mass /(this.height*this.height);
+//         return this.Bmi
+//     }
     
-}
-console.log(john,mark);
-console.log(john.calcBmi());
-console.log(mark.calcBmi());
+// }
+// console.log(john,mark);
+// console.log(john.calcBmi());
+// console.log(mark.calcBmi());
+
+//loop
+//for loop
+// for(var i=0;i<10;i++){
+//     console.log(i);
+// }
+
+// let john = ['john','smith',1990,'designer',false];
+// for(let i=0;i<john.length;i++){
+//     if(typeof john[i] !== 'string') continue;
+//     console.log(john[i]);
+// }
+
+// for(let i=0;i<john.length;i++){
+//     if(typeof john[i] !== 'string') break;
+//     console.log(john[i]);
+// }
+// //while loop
+// let j=0;
+// while(j<john.length){
+//     console.log(john[j])
+//     j++;
+// }
+
+//looping backward
+// let john = ['john','smith',1990,'designer',false];
+// for(let i=john.length-1;i>0;i--){
+//     console.log(john[i]);
+// }
